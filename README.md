@@ -1,4 +1,3 @@
-# bndtools.workspace
-Bndtools Remote Service Workspace
+# bndtools.example.tasklist
+Example Tasklist JaxRS Remote Service built in Bndtools 4.3
 
-See usage documentation here:  https://wiki.eclipse.org/Bndtools_Support_for_Remote_Services_Development 
