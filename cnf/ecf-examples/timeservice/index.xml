@@ -1,33 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Timeservice Example" increment="1572649984667">
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.0.100.v20180502-2137" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.0.100.v20180502-2137" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.0.100.v20180502-2137" type="Version"/>
-      <attribute name="osgi.wiring.host" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="29154" type="Long"/>
-      <attribute name="url" value="com.mycorp.examples.timeservice.consumer.ds.async/com.mycorp.examples.timeservice.consumer.ds.async-1.0.100.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="6C1B8F366BF1BB182D66F96C54781830650EAEA62F7EF873F652E25668938A63"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.timeservice)(version&gt;=2.0.0))"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
-      <directive name="resolution" value="optional"/>
-    </requirement>
-  </resource>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF Timeservice Example" increment="1550701008236">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.async"/>
@@ -81,6 +53,34 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.remoteserviceadmin)(version&gt;=1.1.0))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.0.100.v20180502-2137" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.0.100.v20180502-2137" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.0.100.v20180502-2137" type="Version"/>
+      <attribute name="osgi.wiring.host" value="com.mycorp.examples.timeservice.consumer.ds.async"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="29154" type="Long"/>
+      <attribute name="url" value="com.mycorp.examples.timeservice.consumer.ds.async/com.mycorp.examples.timeservice.consumer.ds.async-1.0.100.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="6C1B8F366BF1BB182D66F96C54781830650EAEA62F7EF873F652E25668938A63"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mycorp.examples.timeservice)(version&gt;=2.0.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.component.annotations))"/>
+      <directive name="resolution" value="optional"/>
     </requirement>
   </resource>
 </repository>

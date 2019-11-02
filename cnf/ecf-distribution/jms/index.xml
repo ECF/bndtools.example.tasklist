@@ -1,35 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF JMS Distribution Provider Support" increment="1572649983665">
-  <resource>
-    <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="javax.jms"/>
-      <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" value="1.1.0.v201205091237" type="Version"/>
-    </capability>
-    <capability namespace="osgi.wiring.bundle">
-      <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
-      <attribute name="osgi.wiring.bundle" value="javax.jms"/>
-    </capability>
-    <capability namespace="osgi.wiring.host">
-      <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
-      <attribute name="osgi.wiring.host" value="javax.jms"/>
-    </capability>
-    <capability namespace="osgi.wiring.package">
-      <directive name="uses" value="javax.transaction.xa"/>
-      <attribute name="version" value="1.1.0" type="Version"/>
-      <attribute name="osgi.wiring.package" value="javax.jms"/>
-    </capability>
-    <capability namespace="osgi.content">
-      <attribute name="size" value="47372" type="Long"/>
-      <attribute name="url" value="javax.jms/javax.jms-1.1.0.jar"/>
-      <attribute name="mime" value="application/vnd.osgi.bundle"/>
-      <attribute name="osgi.content" value="47D72799605FC5715EE0893B5014239944A30837E399B05CCDA09CCCC7659DC1"/>
-    </capability>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.transaction.xa)(&amp;(version&gt;=1.0.1)(!(version&gt;=2.0.0))))"/>
-      <directive name="resolution" value="optional"/>
-    </requirement>
-  </resource>
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="ECF JMS Distribution Provider Support" increment="1565738994283">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.eclipse.ecf.provider.jms"/>
@@ -124,6 +94,36 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(&amp;(version&gt;=1.3.2)(!(version&gt;=2.0.0))))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="javax.jms"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="1.1.0.v201205091237" type="Version"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="javax.jms"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="1.1.0.v201205091237" type="Version"/>
+      <attribute name="osgi.wiring.host" value="javax.jms"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <directive name="uses" value="javax.transaction.xa"/>
+      <attribute name="version" value="1.1.0" type="Version"/>
+      <attribute name="osgi.wiring.package" value="javax.jms"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="47372" type="Long"/>
+      <attribute name="url" value="javax.jms/javax.jms-1.1.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="47D72799605FC5715EE0893B5014239944A30837E399B05CCDA09CCCC7659DC1"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.transaction.xa)(&amp;(version&gt;=1.0.1)(!(version&gt;=2.0.0))))"/>
+      <directive name="resolution" value="optional"/>
     </requirement>
   </resource>
 </repository>
