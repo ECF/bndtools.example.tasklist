@@ -62,7 +62,7 @@
 		name = ECF Jaxrs Distribution Providers; \
 		pretty = true; \
 		local = ${build}/ecf-distribution/jaxrs
-	
+
 -releaserepo: Release
 -baselinerepo: Release
 

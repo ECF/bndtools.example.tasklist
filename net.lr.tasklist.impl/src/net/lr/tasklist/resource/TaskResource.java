@@ -22,7 +22,7 @@ import net.lr.tasklist.model.TaskService;
 @Component(service = TaskResourceService.class, 
 property = { "service.exported.interfaces=*", 
 			 "service.exported.intents=jaxrs",
-			 "ecf.jaxrs.jersey.server.pathPrefix=/rsvcs" 
+			 "ecf.jaxrs.server.pathPrefix=/tasksvc"
 })
 @Path("tasks")
 public class TaskResource implements TaskResourceService {
